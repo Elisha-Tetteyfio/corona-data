@@ -11,7 +11,7 @@ export const fetchData = createAsyncThunk(GET_DATA, async () => {
 
 const dataSlice = createSlice({
   name: 'corona-data',
-  initialState: [{ name: '', code: '', latest_data: { confirmed: '', deaths: '', recovered: '' } }],
+  initialState: [{ name: '', code: '', latest_data: ''/* { confirmed: '', deaths: '', recovered: '' } */ }],
   extraReducers: {
     [fetchData.fulfilled]: (state, action) => action.payload,
   },
