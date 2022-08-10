@@ -22,7 +22,11 @@ const App = () => {
       </Route>
       {countries.map((country) => (
         <Route path={`/details/${country.name}`} exact key={uuidv4()}>
-          <Details name={country.name} latest_data={country.latest_data} />
+          <Details
+            name={country.name}
+            latest_data={country.latest_data}
+            population={country.population}
+          />
         </Route>
       ))}
 
