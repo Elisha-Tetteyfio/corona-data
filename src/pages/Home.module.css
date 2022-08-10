@@ -1,0 +1,51 @@
+* {
+  color: #fff;
+}
+
+.intro {
+  background-color: #303090;
+  height: 8rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.allData {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.parameter {
+  font-size: 10px;
+}
+
+.divide {
+  background-color: #303060;
+}
+
+.countriesContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #5757ff;
+}
+
+.countriesContainer > :nth-child(odd) {
+  background-color: #6767ee;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.link > :nth-child(even) {
+  background-color: red;
+}

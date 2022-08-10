@@ -1,10 +1,16 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Details = (country) => {
   const { name, latest_data: latestData } = country;
   return (
     <>
-      <h1>Yay details page</h1>
+      <header>
+        <NavLink to="/" exact>&lt;</NavLink>
+        {name}
+        {' '}
+        corona details
+      </header>
       <div>
         Name:
         {name}
