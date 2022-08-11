@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import CountryCard from '../components/CountryCard';
 import styles from './Home.module.css';
+import settings from '../images/settings.png';
 
 const Home = () => {
   const countries = useSelector((data) => data.data);
@@ -18,6 +19,13 @@ const Home = () => {
   });
   return (
     <div>
+      <header className={styles.header}>
+        Home
+        <div>
+          <input type="text" placeholder="Search country" />
+          <img src={settings} alt="settings" />
+        </div>
+      </header>
       <div className={styles.intro}>
         <h1>Corona Virus Data</h1>
         <div className={styles.allData}>

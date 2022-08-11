@@ -2,9 +2,27 @@
   color: #fff;
 }
 
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header > div > input {
+  height: 80%;
+  border-radius: 5px;
+  border: none;
+}
+
 .intro {
-  background-color: #303090;
-  height: 8rem;
+  background-image:
+    linear-gradient(#5757ffbb, #202080bb),
+    url('../images/background.jpg');
+  background-size: cover;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0 0;
 }
 
 h1 {
@@ -34,11 +52,11 @@ h1 {
 .countriesContainer {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #5757ff;
+  background-color: #3030c0;
 }
 
-.countriesContainer > :nth-child(odd) {
-  background-color: #6767ee;
+.countriesContainer > :nth-child(3n-2) {
+  background-color: #3030a0;
 }
 
 .link {
