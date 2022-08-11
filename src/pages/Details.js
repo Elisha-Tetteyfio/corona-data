@@ -24,23 +24,23 @@ const Details = (country) => {
         </li>
         <li className={styles.detailsElement}>
           <div>Population</div>
-          <div>{population}</div>
+          <div>{population.toLocaleString()}</div>
         </li>
         <li className={styles.detailsElement}>
           <div>Confirmed cases</div>
-          <div>{latestData.confirmed}</div>
+          <div>{latestData.confirmed.toLocaleString()}</div>
         </li>
         <li className={styles.detailsElement}>
           <div>Critical cases</div>
-          <div>{latestData.critical}</div>
+          <div>{latestData.critical.toLocaleString()}</div>
         </li>
         <li className={styles.detailsElement}>
           <div>Confirmed deaths</div>
-          <div>{latestData.deaths}</div>
+          <div>{latestData.deaths.toLocaleString()}</div>
         </li>
         <li className={styles.detailsElement}>
           <div>Recovered cases</div>
-          <div>{latestData.recovered}</div>
+          <div>{latestData.recovered.toLocaleString()}</div>
         </li>
       </ul>
     </>

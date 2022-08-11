@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux/es/exports';
 import { NavLink } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
@@ -8,6 +8,9 @@ import settings from '../images/settings.png';
 
 const Home = () => {
   const countries = useSelector((data) => data.data);
+  const [search, setSearch] = useState([]);
+  const Search = search.toString().charAt(0).toLocaleUpperCase() + search.slice(1);
+  const searchedCountries = countries.filter((country) => country.name.startsWith(Search));
   let totalCases = 0;
   let totalCountries = 0;
   let totalDeaths = 0;
@@ -22,7 +25,12 @@ const Home = () => {
       <header className={styles.header}>
         Home
         <div>
-          <input type="text" placeholder="Search country" />
+          <input
+            type="text"
+            placeholder="Search country"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
           <img src={settings} alt="settings" />
         </div>
       </header>
@@ -45,7 +53,7 @@ const Home = () => {
       </div>
       <div className={styles.divide}>Stats by countries</div>
       <div className={styles.countriesContainer}>
-        {countries.map((country) => (
+        {searchedCountries.map((country) => (
           <NavLink to={`/details/${country.name}`} exact key={uuidv4()} className={styles.link}>
             <CountryCard
               name={country.name}

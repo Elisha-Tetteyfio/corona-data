@@ -11,6 +11,15 @@
   height: 80%;
   border-radius: 5px;
   border: none;
+  outline: none;
+  background-color: #505090aa;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fffb;
+  margin-left: 2px;
+  padding-left: 5px;
 }
 
 .intro {
@@ -22,7 +31,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 40px 0 0;
+  margin: 35px 0 0;
 }
 
 h1 {
@@ -51,7 +60,7 @@ h1 {
 
 .countriesContainer {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   background-color: #3030c0;
 }
 
@@ -62,8 +71,5 @@ h1 {
 .link {
   list-style: none;
   text-decoration: none;
-}
-
-.link > :nth-child(even) {
-  background-color: red;
+  width: 100%;
 }
