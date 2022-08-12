@@ -8,7 +8,6 @@ Array [
       className="back active"
       href="/"
       onClick={[Function]}
-      style={Object {}}
     >
       &lt; Home
     </a>
@@ -163,7 +162,6 @@ exports[`Testing pages test Home page 1`] = `
     className="countriesContainer"
   >
     <a
-      aria-current={null}
       className="link"
       href="/details/"
       onClick={[Function]}
