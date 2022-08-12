@@ -14,7 +14,9 @@
 
 ## Live Demo 
 
-[Not available yet](https://livedemo.com)
+[Live demo link](https://corona-data1.herokuapp.com/)
+
+[Project description](https://www.loom.com/share/1a038ce3bf7842eb996ac8a28c34c7ef)
 
 
 To get a local copy up and running follow these simple example steps.
@@ -54,6 +56,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The design was inspired by [this design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) by Nelson Sakwa 
+- This was the [API](https://about-corona.net/documentation) used.
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
