@@ -1,0 +1,56 @@
+header {
+  top: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #202080;
+  align-items: center;
+}
+
+.back {
+  text-decoration: none;
+  align-self: flex-start;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.intro {
+  background-image:
+    linear-gradient(#5757ffbb, #202080bb),
+    url('../images/background.jpg');
+  background-size: cover;
+  font-size: 30px;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0 0;
+}
+
+.details {
+  background-color: #5050f0;
+  padding-left: 0;
+  margin: 0;
+  border: 1px #5050f0 solid;
+}
+
+.details > :nth-child(even) {
+  background-color: #3030a0;
+}
+
+.detailsElement {
+  list-style: none;
+  font-size: 20px;
+  border: 1px solid #5050f0;
+  height: 4rem;
+  border-radius: 10px;
+  padding: 0 5px;
+  background-color: #202080;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

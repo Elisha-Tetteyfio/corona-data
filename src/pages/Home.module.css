@@ -1,0 +1,79 @@
+* {
+  color: #fff;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header > div > input {
+  height: 80%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #505090aa;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fffb;
+  margin-left: 2px;
+  padding-left: 5px;
+}
+
+.intro {
+  background-image:
+    linear-gradient(#5757ffbb, #202080bb),
+    url('../images/background.jpg');
+  background-size: cover;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 35px 0 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.allData {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.parameter {
+  font-size: 10px;
+}
+
+.divide {
+  background-color: #303060;
+}
+
+.countriesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #3030c0;
+}
+
+.countriesContainer > :nth-child(4n) {
+  background-color: #3030a0;
+}
+
+.countriesContainer > :nth-child(4n+1) {
+  background-color: #3030a0;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+}

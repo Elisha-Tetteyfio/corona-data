@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing pages test Details page 1`] = `
+Array [
+  <header>
+    <a
+      aria-current="page"
+      className="back active"
+      href="/"
+      onClick={[Function]}
+    >
+      &lt; Home
+    </a>
+    <img
+      alt="settings"
+      src="settings.png"
+    />
+  </header>,
+  <div
+    className="intro"
+  >
+     
+    corona details
+  </div>,
+  <ul
+    className="details"
+  >
+    <li
+      className="detailsElement"
+    >
+      <div>
+        Country
+      </div>
+      <div />
+    </li>
+    <li
+      className="detailsElement"
+    >
+      <div>
+        Population
+      </div>
+      <div>
+        0
+      </div>
+    </li>
+    <li
+      className="detailsElement"
+    >
+      <div>
+        Confirmed cases
+      </div>
+      <div>
+        0
+      </div>
+    </li>
+    <li
+      className="detailsElement"
+    >
+      <div>
+        Critical cases
+      </div>
+      <div>
+        0
+      </div>
+    </li>
+    <li
+      className="detailsElement"
+    >
+      <div>
+        Confirmed deaths
+      </div>
+      <div>
+        0
+      </div>
+    </li>
+    <li
+      className="detailsElement"
+    >
+      <div>
+        Recovered cases
+      </div>
+      <div>
+        0
+      </div>
+    </li>
+  </ul>,
+]
+`;
+
+exports[`Testing pages test Home page 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    Home
+    <div>
+      <input
+        onChange={[Function]}
+        placeholder="Search country"
+        type="text"
+        value={Array []}
+      />
+      <img
+        alt="settings"
+        src="settings.png"
+      />
+    </div>
+  </header>
+  <div
+    className="intro"
+  >
+    <h1>
+      Corona Virus Data
+    </h1>
+    <div
+      className="allData"
+    >
+      <div>
+        <div
+          className="value"
+        >
+          1
+        </div>
+        <div
+          className="parameter"
+        >
+          Number of countries
+        </div>
+      </div>
+      <div>
+        <div
+          className="value"
+        >
+          NaN
+        </div>
+        <div
+          className="parameter"
+        >
+          Total number of cases
+        </div>
+      </div>
+      <div>
+        <div
+          className="value"
+        >
+          NaN
+        </div>
+        <div
+          className="parameter"
+        >
+          Total number of deaths
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="divide"
+  >
+    Stats by countries
+  </div>
+  <div
+    className="countriesContainer"
+  >
+    <a
+      className="link"
+      href="/details/"
+      onClick={[Function]}
+    >
+      <div
+        className="container"
+      >
+        <div>
+          <img
+            alt="details"
+            src="details.png"
+          />
+        </div>
+        <div
+          className="bottom"
+        >
+          <div
+            className="name"
+          />
+          <div />
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

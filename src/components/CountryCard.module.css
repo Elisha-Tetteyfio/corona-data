@@ -1,0 +1,32 @@
+.container {
+  border: 1px solid #303060;
+  height: 7rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.bottom {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 5px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: right;
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+}
+
+img {
+  margin: 5px;
+}
