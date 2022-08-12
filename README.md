@@ -17,7 +17,6 @@
 [Not available yet](https://livedemo.com)
 
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -54,10 +53,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+- The design was inspired by [this design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) by Nelson Sakwa 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the components test CountryCard 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <img
+      alt="details"
+      src="details.png"
+    />
+  </div>
+  <div
+    className="bottom"
+  >
+    <div
+      className="name"
+    />
+    <div>
+      0
+    </div>
+  </div>
+</div>
+`;

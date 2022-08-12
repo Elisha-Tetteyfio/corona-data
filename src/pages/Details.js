@@ -4,7 +4,11 @@ import styles from './Details.module.css';
 import settings from '../images/settings.png';
 
 const Details = (country) => {
-  const { name, latest_data: latestData, population } = country;
+  const {
+    name, latest_data: latestData = {
+      confirmed: 0, critical: 0, deaths: 0, recovered: 0,
+    }, population = 0,
+  } = country;
   return (
     <>
       <header>
