@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter, Route, Routes,
+} from 'react-router-dom';
 import { useSelector } from 'react-redux/es/exports';
 import { v4 as uuidv4 } from 'uuid';
 import Details from './pages/Details';
@@ -16,20 +18,27 @@ const App = () => {
   const countries = useSelector((data) => data.data);
 
   return (
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      {countries.map((country) => (
-        <Route path={`/details/${country.name}`} exact key={uuidv4()}>
-          <Details
-            name={country.name}
-            latest_data={country.latest_data}
-            population={country.population}
-          />
-        </Route>
-      ))}
-    </Switch>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {countries.map((country) => {
+          const linkName = country.name.replace(/ /gi, '%20');
+          return (
+            <Route
+              path={`/details/${linkName}`}
+              key={uuidv4()}
+              element={(
+                <Details
+                  name={country.name}
+                  latest_data={country.latest_data}
+                  population={country.population}
+                />
+            )}
+            />
+          );
+        })}
+      </Routes>
+    </BrowserRouter>
   );
 };
 

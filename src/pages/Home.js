@@ -53,15 +53,18 @@ const Home = () => {
       </div>
       <div className={styles.divide}>Stats by countries</div>
       <div className={styles.countriesContainer}>
-        {searchedCountries.map((country) => (
-          <NavLink to={`/details/${country.name}`} exact key={uuidv4()} className={styles.link}>
-            <CountryCard
-              name={country.name}
-              latest_data={country.latest_data}
-              key={uuidv4()}
-            />
-          </NavLink>
-        ))}
+        {searchedCountries.map((country) => {
+          const linkName = country.name.replace(/ /gi, '%20');
+          return (
+            <NavLink to={`/details/${linkName}`} key={uuidv4()} className={styles.link}>
+              <CountryCard
+                name={country.name}
+                latest_data={country.latest_data}
+                key={uuidv4()}
+              />
+            </NavLink>
+          );
+        })}
       </div>
     </div>
   );

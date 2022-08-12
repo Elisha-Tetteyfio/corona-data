@@ -12,7 +12,7 @@ const Details = (country) => {
   return (
     <>
       <header>
-        <NavLink to="/" exact className={styles.back}>&lt; Home</NavLink>
+        <NavLink to="/" className={styles.back}>&lt; Home</NavLink>
         {name}
         <img src={settings} alt="settings" />
       </header>
